@@ -1,10 +1,12 @@
-.topnav {
-    background-color: antiquewhite;
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
-#navbarSupportedContent {
-    display: flex;
-    gap: 500px;
+#navbar {
+    z-index: 10000;
 }
 
 #FIRST-img {
@@ -96,14 +98,9 @@
 
 
 #footer {
-    display: flex;
+    background-color: #212529;
     height: 230px;
-    width: 100%;
-    background-color: #343a40;
-    justify-content: center;
     align-items: center;
-    gap: 75px;
-    position: absolute;
     bottom: 0;
 }
 
@@ -120,49 +117,31 @@
     gap: 30px;
 }
 
-#about-us {
-    display: block;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    top: 300px;
-    left: 50px;
-    width: 700px;
+#about-team {
+    width: 100vw;
+    max-height: 530px;
+    object-fit: cover;
 }
 
 #mission-statement {
-    display: block;
-    background-color: #343a40;
-    text-align: center;
+    min-height: 180px;
+    z-index: 50;
+    background-color: #212529;
+    justify-content: center;
     flex-direction: column;
-    gap: 20px;
-    height: 200px;
-    width: 100vw;
     color: white;
 }
 
-#mission-statement{
-    display: block;
-    position: absolute;
-    background-color: #343a40;
-    height: 200px;
-    width: 100vw;
-    color: white;
+#mission-statement h5 {
+    margin: 20px auto 20px auto;
+    max-width: 800px;
 }
 
-#mission-statement h2{
-    margin: auto;
-    margin-top: 20px;
+#about-us {
+    margin: 25px auto 50px auto;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    left: 10vw;
 }
-
-#mission-statement h5{
-    margin: auto;
-    margin-top: 30px;
-    text-align: center;
-    width: 1000px;
-}
-
-
-
