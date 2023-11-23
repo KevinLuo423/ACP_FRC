@@ -7,6 +7,7 @@ body {
 
 #navbar {
     z-index: 10000;
+    background: black;
 }
 
 #FIRST-img {
@@ -98,7 +99,7 @@ body {
 
 
 #footer {
-    background-color: #212529;
+    background-color: black;
     height: 230px;
     align-items: center;
     bottom: 0;
@@ -126,7 +127,7 @@ body {
 #mission-statement {
     min-height: 180px;
     z-index: 50;
-    background-color: #212529;
+    background-color: black;
     justify-content: center;
     flex-direction: column;
     color: white;
@@ -144,4 +145,40 @@ body {
     align-items: center;
     max-width: 1500px;
     left: 10vw;
+}
+
+#home-logo {
+    display: flex;
+    width: 100vw;
+    height: 94vh;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    background: rgb(80,32,141);
+    background: radial-gradient(circle, rgba(80,32,141,1) 25%, rgba(16,0,27,1) 90%);
+}
+
+#sponsors {
+    display: flex;
+    width: 100vw;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+#welcome-message {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+#welcome-message h5{
+    max-width: 800px;
 }
