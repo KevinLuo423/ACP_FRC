@@ -96,15 +96,6 @@ body {
     margin-left: 50px;
 }
 
-
-
-#footer {
-    background-color: black;
-    height: 230px;
-    align-items: center;
-    bottom: 0;
-}
-
 .divider {
     border-left: 3px solid #9a9da0;
     height: 130px;
@@ -147,15 +138,18 @@ body {
     left: 10vw;
 }
 
-#home-logo {
-    display: flex;
+#home-logo-bg {
     width: 100vw;
     height: 94vh;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
+    object-fit: contain;
     background: rgb(80,32,141);
     background: radial-gradient(circle, rgba(80,32,141,1) 25%, rgba(16,0,27,1) 90%);
+}
+
+#home-logo {
+    height: 94vh;
+    max-height: 1000px;
+    object-fit: cover;
 }
 
 #sponsors {
@@ -170,15 +164,34 @@ body {
 }
 
 #welcome-message {
-    display: flex;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
+    background-color: #16181a;
     color: white;
 }
 
-#welcome-message h5{
+#welcome-message h6{
+    margin: 20px auto 20px auto;
     max-width: 800px;
+}
+
+#home-button-group {
+    display: flex;
+    gap: 50px;
+}
+
+.btn {
+    margin: 20px 0px 20px 0px;
+    width: 275px;
+}
+
+.btn:hover {
+    font: verdana;
+    color: white;
+    background-color: #4f208d;
+}
+
+#footer {
+    background-color: #212529;
+    height: 230px;
+    align-items: center;
+    bottom: 0;
 }

@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav class="navbar navbar-dark navbar-expand-md sticky-top" id="navbar">
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top" id="navbar">
       <div class="container-fluid">
           <img class="navbar-brand" src="images/logo.png" width="60px">
           <a class="navbar-brand" href="index.html">IGKNIGHTED</a>
@@ -43,19 +43,31 @@
     <div class="container-fluid text-center g-0">
       <div class="row">
         <div class="col">
-          <div id="home-logo">
-            <img class="img-fluid" src="images/logo_text.png" width="800px">
+          <div class="container-fluid d-flex justify-content-center align-items-center" id="home-logo-bg">
+            <img class="img-fluid" src="images/logo_text.png" id="home-logo">
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col" id="welcome-message">
-          <h1>Welcome</h1>
-          <br>
-          <h5>
-            Team 9704, IgKnighted, joined the FIRST Robotics Competition in 2023. We represent the students of
-            Arizona College Prep High School in Chandler, Arizona. 
-          </h5>
+        <div class="col pt-2" class="container-fluid d-flex justify-content-center" id="welcome-message">
+          <div class="row">
+            <h1>Welcome</h1>
+          </div>
+          <div class="row">
+            <h6 class="text-center">
+              We are FRC team 9704, IgKnighted Robotics, representing the students of
+              Arizona College Prep High School in Chandler, Arizona. For our first year,
+              we will forge a path through the world of FIRST, driven by our passion and 
+              dedication. We hope to grow as a team while igniting a burning passion for 
+              STEM wherever we go.
+            </h6>
+          </div>
+          <div class="row">
+            <div class="container-fluid d-flex justify-content-center gap-5 col-6">
+              <a type="button" class="btn btn-outline-light btn-md" href="about.html">LEARN MORE ABOUT US </a>
+              <a type="button" class="btn btn-outline-light btn-md" href="FIRST.html">LEARN MORE ABOUT FIRST </a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -94,6 +106,7 @@
       </footer>
     </div>
 
+    <!--
     <script>
       history.scrollRestoration = "manual";
 
@@ -101,6 +114,7 @@
             $(window).scrollTop(0);
       });
     </script>
+    -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
