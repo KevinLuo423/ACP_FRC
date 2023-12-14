@@ -81,13 +81,13 @@ body {
 #mission-statement {
     min-height: 180px;
     z-index: 50;
-    background-color: black;
+    background-color: #16181a;
     justify-content: center;
     flex-direction: column;
     color: white;
 }
 
-#mission-statement h5 {
+#mission-statement h6 {
     margin: 20px auto 20px auto;
     max-width: 800px;
 }
