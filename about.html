@@ -1,130 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
-<head>
-    <link rel="shortcut icon" type="image/png" href="images/logo.png"> <!-- website icon -->
+    <head>
+        <link rel="shortcut icon" type="image/png" href="images/logo.png"> <!-- website icon -->
 
-    <!--Meta tags and Bootstrap-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <!--Meta tags and Bootstrap-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <link href="styles.css" rel="stylesheet">
+        <link href="/static/images" rel="icon">
 
-    <title>IgKnighted | About Us</title>
+        <link href="/static/styles.css" rel="stylesheet">
 
-</head>
+
+    </head>
 
 <body>
+  <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top" id="navbar">
+    <div class="container-fluid mx-4">
+        <img class="navbar-brand" src="{{ url_for('static', filename='logo.png') }}" width="60px">
+        <a class="navbar-brand" href="/">IGKNIGHTED</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/">HOME</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="/about">ABOUT</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/FIRST">FIRST</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/sponsors">SPONSORS</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/resources">RESOURCES</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="/supportus">SUPPORT US</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-      <nav class="navbar navbar-dark navbar-expand-md bg-dark sticky-top" id="navbar">
-        <div class="container-fluid mx-4">
-            <img class="navbar-brand" src="images/logo.png" width="60px">
-            <a class="navbar-brand" href="index.html">IGKNIGHTED</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="/">HOME</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link active" aria-current="page" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="FIRST.html">FIRST</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="sponsors.html">SPONSORS</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="resources.html">RESOURCES</a>
-              </li>
-              <li class="nav-item mx-2">
-                <a class="nav-link" href="supportus.html">SUPPORT US</a>
-              </li>
-            </ul>
-          </div>
+  <div class="container-fluid text-center g-0">
+    <div class="row">
+      <div class="col">
+        <img class="img-fluid" id="about-team" src="{{ url_for('static', filename='team_photo.jpg') }}">
+      </div>
+    </div>
+    <div class="row" id="mission-statement">
+      <div class="col">
+        <div class="row pt-3">
+          <h1>Mission Statement</h1>
         </div>
-      </nav>
-
-      <div class="container-fluid text-center g-0">
         <div class="row">
-          <div class="col">
-            <img class="img-fluid" id="about-team" src="images/team_photo.jpg">
-          </div>
-        </div>
-        <div class="row" id="mission-statement">
-          <div class="col">
-            <div class="row pt-3">
-              <h1>Mission Statement</h1>
-            </div>
-            <div class="row">
-              <h6 class="text-center">
-                Team IgKnighted seeks to cultivate a large range of skills and qualities, including an 
-                interest in STEM, critical thinking, innovation, and gracious professionalism by providing 
-                real-world experience in STEM through intense robotics competitions, while promoting teamwork 
-                and creating an impact on our community.
-              </h6>
-            </div>
-          </div>
-        </div>
-        </div>
-        
-        <div class="row" id="about-us">
-          <div class="col">
-            <img src="images/logo.png" width="500px">
-          </div>
-          <div class="col-7 px-5">
-            <h5>
-              Team 9704 / IgKnighted
-            </h5>
-            IgKnighted Robotics, team 9704, is a first-year FIRST Robotics team debuting in the 2024 season. Our
-            members consist of 9-12th grade students of Arizona College Prep. With pivotal support from our neighboring
-            teams, we look to build a strong foundation for the first FRC team in ACP.
-            <br> 
-            <br>
-            Igknighted was created with a clear mission in mind: ignite students' passion for STEM. 
-            The knights of ACP are also scientists and engineers, having proved time and time again 
-            that they wanted to take their interest in STEM to the next level. Enter IgKnighted. By 
-            introducing FIRST to the ACP community, we will pave the way for success in STEM. The competitive, 
-            extensive nature of FIRST fills a void in the community, ushering in opportunities for students 
-            to develop their skills in not just robotics - but also physics, mathematics, 
-            communications, teamwork, leadership, and business. It isn’t just themselves they are developing either. IgKnighted 
-            facilitates community service by providing a platform for students to educate and demonstrate STEM. 
-            With IgKnighted, ACP students won’t have to keep dreaming about STEM, because now they can make 
-            their dreams a reality.
-          </div>
+          <h6 class="text-center">
+            Team IgKnighted seeks to cultivate a large range of skills and qualities, including an 
+            interest in STEM, critical thinking, innovation, and gracious professionalism by providing 
+            real-world experience in STEM through intense robotics competitions, while promoting teamwork 
+            and creating an impact on our community.
+          </h6>
         </div>
       </div>
-
-      <div class="container-fluid text-center g-0">
-        <footer class="row justify-content-md-center" id="footer">
-          <div class="col-2">
-            <img src="images/FIRSTRobotics_Type_White.png" width="200">
-          </div>
-          <div class="col-1"></div>
-          <div class="col-2" id="follow-us">
-            <a href="https://www.facebook.com/profile.php?id=61551587770650&mibextid=LQQJ4d">
-                <img alt="facebook" src="images/facebook_icon.png" width="40">
-            </a>
-            <a href="https://instagram.com/acp_frcofficial?igshid=NzZlODBkYWE4Ng==">
-                <img src="images/instagram_icon.png" width="40">
-            </a>
-            <a href="https://youtube.com/@ACPFRC?si=IIVbtwuJ5AGRwsD_">
-                <img src="images/youtube_icon.png" width="40">
-            </a>
-          </div>
-          <div class="col-1"></div>
-          <div class="col-2">
-              <h4 style="color: white">Contact Us:</h4>
-              <a style="font-size: 22px" href="mailto:frc@acprobotics.org">frc@acprobotics.org</a>
-          </div>
-        </footer>
+    </div>
+    </div>
+    
+    <div class="container-fluid g-0" id="about-us">
+      <div class="row containter-xl align-items-center justify-content-center text-center">
+        <div class="col-xl-5">
+          <img src="{{ url_for('static', filename='logo.png') }}" width="500px">
+        </div>
+        <div class="col-11 col-xl-7 py-5 px-5">
+          <h3>
+            Team 9704 / IgKnighted
+          </h3>
+          IgKnighted Robotics, team 9704, is a first-year FIRST Robotics team debuting in the 2024 season. Our
+          members consist of 9-12th grade students of Arizona College Prep. With pivotal support from our neighboring
+          teams, we look to build a strong foundation for the first FRC team in ACP.
+          <br> 
+          <br>
+          Igknighted was created with a clear mission in mind: ignite students' passion for STEM. 
+          The knights of ACP are also scientists and engineers, having proved time and time again 
+          that they wanted to take their interest in STEM to the next level. Enter IgKnighted. By 
+          introducing FIRST to the ACP community, we will pave the way for success in STEM. The competitive, 
+          extensive nature of FIRST fills a void in the community, ushering in opportunities for students 
+          to develop their skills in not just robotics - but also physics, mathematics, 
+          communications, teamwork, leadership, and business. It isn’t just themselves they are developing either. IgKnighted 
+          facilitates community service by providing a platform for students to educate and demonstrate STEM. 
+          With IgKnighted, ACP students won’t have to keep dreaming about STEM, because now they can make 
+          their dreams a reality.
+        </div>
       </div>
+    </div>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</body>
+{% endblock %}
