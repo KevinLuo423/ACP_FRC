@@ -87,14 +87,32 @@ body {
     color: white;
 }
 
+#mission-statement h1 {
+    font-weight: 700;
+}
+
 #mission-statement h6 {
     margin: 20px auto 20px auto;
-    max-width: 800px;
+    max-width: 80%;
+    font-size: 20px;
+}
+
+#statistics {
+    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 135px;
+    z-index: 51;
+    background-color: #7a22f2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
 }
 
 #about-us {
     margin: 25px auto 50px auto;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
     max-width: 1500px;
@@ -104,9 +122,10 @@ body {
 #home-logo-bg {
     width: 100vw;
     height: 94vh;
-    object-fit: contain;
-    background: rgb(80,32,141);
-    background: radial-gradient(circle, rgba(80,32,141,1) 25%, rgba(16,0,27,1) 90%);
+    object-fit: none;
+    background-image: url("images/wavyBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #home-logo {
@@ -127,13 +146,20 @@ body {
 }
 
 #welcome-message {
-    background-color: #16181a;
-    color: white;
+    background-color: white;
+    color: black;
+}
+
+#welcome-message h1{
+    font-size: 65px;
 }
 
 #welcome-message h6{
     margin: 20px auto 20px auto;
+    font-size: 30px;
     max-width: 800px;
+    max-width: 80vw;
+
 }
 
 #home-button-group {
@@ -143,13 +169,15 @@ body {
 
 .btn {
     margin: 20px 0px 20px 0px;
-    width: 275px;
+    width: 275px;    
+    color: white;
+    background-color: #a440f6;
 }
 
 .btn:hover {
     font: verdana;
     color: white;
-    background-color: #ff9900;
+    background-color: #7a22f2;
 }
 
 #footer {
