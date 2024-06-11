@@ -1,3 +1,31 @@
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.7em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
 body {
     margin: 0;
     width: 100vw;
@@ -65,13 +93,6 @@ body {
     border-radius: 7px;
 }
 
-#follow-us {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-
 #about-team {
     width: 100vw;
     max-height: 530px;
@@ -101,12 +122,9 @@ body {
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
-    min-height: 135px;
+    /* min-height: 135px; */
     z-index: 51;
     background-color: #7a22f2;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
     color: white;
 }
 
@@ -136,13 +154,9 @@ body {
 
 #sponsors {
     display: flex;
-    width: 100vw;
-    height: 200px;
-    margin-bottom: 10px;
     background-color: white;
     justify-content: center;
     align-items: center;
-    gap: 60px;
 }
 
 #welcome-message {
@@ -182,7 +196,7 @@ body {
 
 #footer {
     background-color: #212529;
-    height: 230px;
+    /* height: 230px; */
     align-items: center;
     bottom: 0;
 }
