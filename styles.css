@@ -15,23 +15,26 @@
 /* md */
 @media screen and (min-width: 992px) {
     body {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
     body {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 
 body {
-    margin: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
+
+/* .row{
+    margin: 0px;
+} */
 
 #navbar {
     z-index: 10000;
@@ -41,22 +44,34 @@ body {
 #FIRST-img {
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
-    height: 180px;
     margin-top: auto;
     margin-bottom: auto;
+    object-fit: contain;
+    max-width: 600px;
+    width: 80%;
+}
+
+#FIRST-vid {
+    max-width: 650px;
+    max-height: 415px;
+    width: 100%;
+    height: 26vh;
 }
 
 #FIRST-info {
     background-color: black;
     color: white;
-    min-height: 500px;
-
+    height: 40vh;
+    max-height: 550px;
+    width: 100%;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box
 }
 
-
 #hr {
-    width: 900px;
+    width: 100%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -67,7 +82,10 @@ body {
 }
 
 #match_pic {
-    width: 640px;
+    object-fit: cover;
+    max-height: 400px;
+    min-height: 300px;
+    /* max-width: 640px; */
 }
 
 #First-description1 p{
@@ -94,13 +112,18 @@ body {
 }
 
 #about-team {
-    width: 100vw;
-    max-height: 530px;
+    width: 100%;
+    max-height: 700px;
     object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4013921113689095) 80%); 
+    background-image: url("images/sustainAward.jpg");
 }
 
 #mission-statement {
-    min-height: 180px;
+    min-height: 200px;
     z-index: 50;
     background-color: #16181a;
     justify-content: center;
@@ -120,8 +143,8 @@ body {
 
 #statistics {
     display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
+    /* padding-left: 10%;
+    padding-right: 10%; */
     /* min-height: 135px; */
     z-index: 51;
     background-color: #7a22f2;
@@ -134,12 +157,12 @@ body {
     justify-content: center;
     align-items: center;
     max-width: 1500px;
-    left: 10vw;
+    /* left: 10vw; */
 }
 
 #home-logo-bg {
-    width: 100vw;
-    height: 94vh;
+    width: 100%;
+    height: 89vh;
     object-fit: none;
     background-image: url("images/wavyBG.jpg");
     background-size: cover;
@@ -148,7 +171,7 @@ body {
 
 #home-logo {
     height: 94vh;
-    max-height: 1000px;
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -196,6 +219,7 @@ body {
 
 #footer {
     background-color: #212529;
+    /* width: calc(100vw - (100vw - 100%)); */
     /* height: 230px; */
     align-items: center;
     bottom: 0;

@@ -18,7 +18,7 @@
 
 <body>
 
-  <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top opacity-75" id="navbar">
+  <nav class="navbar navbar-dark navbar-expand-sm bg-dark" id="navbar">
     <div class="container-fluid mx-4">
         <a class="navbar-brand" href="index.html">
           <img class="navbar-brand" src="images/bestflamesmaller.png" width="100px">
@@ -40,20 +40,19 @@
         </ul>
       </div>
     </div>
-  </nav>
+</nav>
 
-  <div class="container-fluid text-center g-0">
-    <div class="row">
-      <div class="col mt-3">
-        <img class="img-fluid" id="FIRST-img" src="images/FIRST.png">
+
+    <div class="row container-fluid text-center m-auto">
+      <div class="col mt-3 m-auto">
+        <img id="FIRST-img" src="images/FIRST.png">
         <hr id="hr">
       </div>
     </div>
-    <div class="row align-items-center">
+
+    <div class="row align-items-center text-center mx-2">
       <div class="col my-4">
-        <iframe width="650" height="415"
-        src="https://youtube.com/embed/K_PuWjr7qcM" class="rounded-lg" allowfullscreen> 
-        </iframe>
+        <iframe id="FIRST-vid" src="https://youtube.com/embed/K_PuWjr7qcM" class="rounded-lg" allowfullscreen> </iframe>
       </div>
       <div class="col">
         <div class="container-fluid" id="First-description1">
@@ -68,14 +67,17 @@
             “FIRST is More Than Robots. The robots are a vehicle for students to learn important life skills. Kids often come in not knowing what to expect – of the program nor of themselves. They leave, even after the first season, with a vision, with confidence, and with a sense that they can create their own future.”
             – Dean Kamen
           </p>
-          <a href='https://www.firstinspires.org/'><button class="btn btn-outline-dark btn-md">Learn More</button></a>
+          <a href='https://www.firstinspires.org/'>
+            <button class="btn btn-outline-dark btn-md">Learn More</button>
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid" id="FIRST-info"> 
-      <div class="row align-items-center">
-        <div class="col text-center" id="First-description2">
+    <!-- <div class="container-fluid" id="FIRST-info"> -->
+      <div class="row text-center pt-2 g-0" id="FIRST-info">
+        
+        <div class="col-sm-7 px-5 m-auto" id="First-description2">
             <h2>First Robotics Competition</h2>
             <p>
               FIRST Robotics Competition is an international robotics competition for high schoolers that seeks to foster interest
@@ -86,46 +88,57 @@
               rigorous and competitive experience, FIRST students are able to work with mentors and professionals in the STEM field. 
               The FIRST competition builds teamwork, business, leadership, and STEM skills.
             </p>
-            <a href='https://www.firstinspires.org/resource-library/frc/archived-game-documentation'><button class="btn btn-outline-light btn-md">Learn More</button></a>
+            <a href='https://www.firstinspires.org/resource-library/frc/archived-game-documentation'>
+              <button class="btn btn-outline-light btn-md">Learn More</button>
+            </a>
         </div>
         
-        <div class="col justify-content-center">
-          <img class="img-fluid" id="match_pic" src="images/MatchPic.png">
+        <div class="container-fluid col-sm px-5 area-style" style="background-color: black; display: block;">
+          <img class="rounded-3 img-fluid" id="match_pic" src="images/MatchPic.png">
         </div>
-      </div>
+
     </div>
-  </div>
 
-  <div class="container-fluid text-center g-0">
-    <footer class="row justify-content-center py-5" id="footer">
-      <div class="col-sm-1"></div>
-      <div class="col-3 col-lg-2">
-        <img class="img-responsive" src="images/FIRSTRobotics_Type_White.png" width="100%" style="max-width:250px">
-      </div>
-      <div class="col-1"></div>
-      <div class="col-3 col-lg-2">
-        <img class="img-responsive" src="images/9704Footer.png" width="100%" style="max-width:250px">
-      </div>
-      <!-- <div class="col-2 d-flex justify-content-center align-items-center column-gap-5">
-        <a href="https://www.facebook.com/profile.php?id=61551587770650&mibextid=LQQJ4d">
-            <img alt="facebook" src="images/facebook_icon.png" width="60">
-        </a>
-        <a href="https://instagram.com/acp_frcofficial?igshid=NzZlODBkYWE4Ng==">
-            <img src="images/instagram_icon.png" width="60">
-        </a>
-        <a href="https://youtube.com/@ACPFRC?si=IIVbtwuJ5AGRwsD_">
-            <img src="images/youtube_icon.png" width="60">
-        </a>
-      </div> -->
-      <div class="col-1"></div>
-      <div class="col-2 text-nowrap text-left">
-          <p style="color: white">Contact Us:</p>
-          <a style="font:300px" href="mailto:frc@acprobotics.org">frc@acprobotics.org</a>
-      </div>
-      <div class="col-1"></div>
-    </footer>
-  </div>
+    <div class="container-fluid text-center">
+      <footer class="row justify-content-center py-5" id="footer">
 
-    
+        <div class="col-sm-1"></div>
+
+        <div class="col-3 col-lg-2">
+          <img class="img-responsive" src="images/FIRSTRobotics_Type_White.png" width="100%" style="max-width:250px">
+        </div>
+
+        <div class="col-1"></div>
+
+        <div class="col-3 col-lg-2">
+          <img class="img-responsive" src="images/9704Footer.png" width="100%" style="max-width:250px">
+        </div>
+
+        <!-- <div class="col-2 d-flex justify-content-center align-items-center column-gap-5">
+          <a href="https://www.facebook.com/profile.php?id=61551587770650&mibextid=LQQJ4d">
+              <img alt="facebook" src="images/facebook_icon.png" width="60">
+          </a>
+          <a href="https://instagram.com/acp_frcofficial?igshid=NzZlODBkYWE4Ng==">
+              <img src="images/instagram_icon.png" width="60">
+          </a>
+          <a href="https://youtube.com/@ACPFRC?si=IIVbtwuJ5AGRwsD_">
+              <img src="images/youtube_icon.png" width="60">
+          </a>
+        </div> -->
+
+        <div class="col-1"></div>
+
+        <div class="col-2 text-nowrap text-left">
+            <p style="color: white">Contact Us:</p>
+            <a style="font:300px" href="mailto:frc@acprobotics.org">frc@acprobotics.org</a>
+        </div>
+
+        <div class="col-sm-1"></div>
+
+      </footer>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     
 </body>
