@@ -1,7 +1,9 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 /* xs < 768 */
 @media screen and (max-width: 767px) {
     body {
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 }
 
@@ -25,13 +27,14 @@
         font-size: 1em;
     }
 }
-
-body {
+html,body
+{
     width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
-
 /* .row{
     margin: 0px;
 } */
@@ -223,4 +226,5 @@ body {
     /* height: 230px; */
     align-items: center;
     bottom: 0;
+    overflow-wrap: break-word;
 }
